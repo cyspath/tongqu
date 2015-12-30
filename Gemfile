@@ -1,5 +1,15 @@
 source 'https://rubygems.org'
 
+gem 'bcrypt', '~> 3.1.7'
+gem 'better_errors'
+gem 'binding_of_caller'
+gem 'cloudinary'
+# gem 'figaro'
+# gem 'newrelic_rpm'
+gem 'pry-rails'
+# gem 'rails_12factor'
+gem 'react-rails', '~> 1.5.0'
+# gem 'seed_dump'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
@@ -42,4 +52,3 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
