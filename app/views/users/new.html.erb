@@ -1,0 +1,13 @@
+<div class="session-new__content">
+  <%= render :partial => 'signup_form', :locals => {:xyz => 'abc'} %>
+</div>
+
+<div class="session-new__content hide">
+  <%= render :partial => 'login_form', :locals => {:xyz => 'abc'} %>
+</div>
+
+<script type="text/javascript">
+  $('.switch-to').click(function() {
+    $('.session-new__content').toggleClass('hide')
+  })
+</script>

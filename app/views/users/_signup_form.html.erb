@@ -1,0 +1,33 @@
+<form action="<%=users_url %>" method="post" class="login">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
+
+  <h1>欢迎加入同趣网，连接有共同兴趣的人</h1>
+
+  <h3>彼此学习，探索爱好，从此不孤单。</h3>
+  <h7>永远免费为您提供的平台</h5>
+
+
+  <div class="session-new__username">
+    <input type="text" name="user[username]" placeholder="您的网名（别人可以看到）" autofocus required>
+  </div>
+
+  <div class="session-new__email">
+    <input type="text" name="user[email]" placeholder="您的邮箱（不会被公开）" required>
+  </div>
+
+  <div class="session-new__phone">
+    <input type="text" name="user[phone]" placeholder="您的手机号（不会被公开）" required>
+  </div>
+
+  <div class="session-new__password">
+    <input type="password" name="user[password]" placeholder="您的密码" required>
+  </div>
+
+  <input type="submit" value="加入我们的大家庭">
+
+</form>
+
+<div>
+  <p>已有账号？</p>
+  <div class="switch-to cursor-hand">登录</div>
+</div>
