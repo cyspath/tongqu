@@ -2,6 +2,8 @@ json.extract!(
   user,
   :id,
   :username,
+  :email,
+  :phone,
   :password_digest,
   :created_at,
   )

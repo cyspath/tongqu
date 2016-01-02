@@ -1,0 +1,16 @@
+Current User: <%= current_user ? current_user.email : "NONE" %><br>
+<%= link_to('Link to api/users', 'api/users', html_options = {}) %>
+
+<div class="session-new__content">
+  <%= render :partial => 'forms/signup_form', :locals => {:xyz => 'abc'} %>
+</div>
+
+<div class="session-new__content hide">
+  <%= render :partial => 'forms/login_form', :locals => {:xyz => 'abc'} %>
+</div>
+
+<script type="text/javascript">
+  $('.switch-to').click(function() {
+    $('.session-new__content').toggleClass('hide')
+  })
+</script>
