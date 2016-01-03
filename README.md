@@ -32,3 +32,25 @@ OLD SITE info...
 * Groups, Huddle Events, and Users share Images and Comments table via polymorphic associations
 * Search queries database and returns Group, Event and User matches with context of matched data type
 * Custom authentication using Bcrypt to store secret hash without setting User#password and stores session token via SecureRandom::urlsafe_base64
+
+
+### Flux 2.1.0 (gem flux-rails-assets)
+```
+var AppDispatcher = new Flux.Dispatcher();
+
+var ExampleStore = new EventEmitter();
+
+ExampleStore.dispatchToken = AppDispatcher.register(function (payload) {
+  var action = payload.action;
+
+  switch(action.actionType) {
+
+    case 'EXAMPLE_ACTION':
+      ExampleStore.emit('change');
+      break;
+
+    default:
+      // do nothing
+  }
+});
+```
