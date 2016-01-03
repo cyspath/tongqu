@@ -1,7 +1,8 @@
 class Api::UsersController < ApplicationController
   def index
     @users = User.all
-    render 'index'
+    # render 'index'
+    render component: 'Greeting', props: { users: @users.to_json }, tag: 'span', class: 'todo'
   end
 
   def show
